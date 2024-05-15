@@ -9,12 +9,16 @@
 </head>
 
 <body class="bg-background font-paragraphs">
-
+  <div class="absolute top-3 left-3">
+    <a href="/acasa" class="">
+      <%-include('./components/logo.ejs') %>
+    </a>
+  </div>
   <canvas id="render-canvas" class="w-1/2 h-screen absolute"></canvas>
 
   <div class="flex bg-background rounded-sm w-full h-screen text-background shadow-md">
 
-    <div class="w-1/2 h-screen flex items-center justify-center p-4 text-text z-[1]">
+    <div class="w-1/2 h-screen hidden md:flex items-center justify-center p-4 text-text z-[1]">
       <div class="flex items-center flex-col space-y-4">
         <h1 class="text-3xl font-headings text-text">Build software better</h1>
         <div class="flex space-x-3 text-sm md:px-40">
@@ -30,7 +34,7 @@
       </div>
     </div>
 
-    <div class="w-full md:w-1/2 flex flex-col justify-center space-y-5 px-4 md:px-0 md:py-3 bg-primary text-text bg-opacity-20">
+    <div class="w-full md:w-1/2 flex flex-col justify-center space-y-5 px-4 md:px-0 md:py-3 bg-background text-text bg-opacity-20">
       <div class="center flex-col text-2xl font-extrabold pb-10 flex-wrap">
         <h1 class="font-headings text-center">Create an account</h1>
         <p class="text-sm text-text text-opacity-80 text-center px-4">Welcome to Concurs severin please proceed with the

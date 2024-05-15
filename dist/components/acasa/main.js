@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded' , function(){
         "hideMethod": "fadeOut"
       }
 
-    for (let i = 0 ; i < 10 ; i++)     toastr.success('hasda');
 
 });
 
