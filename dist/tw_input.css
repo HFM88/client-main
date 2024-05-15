@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Azonix";
+    src: url('./fonts/Azonix.otf');
+}
+
+@font-face {
+    font-family: "Trench";
+    src: url('./fonts/Trench.ttf');
+} 

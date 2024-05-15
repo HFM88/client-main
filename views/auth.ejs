@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href='./dist/tw_output.css'>
+</head>
+
+<body class="bg-background font-paragraphs">
+
+  <canvas id="render-canvas" class="w-1/2 h-screen absolute"></canvas>
+
+  <div class="flex bg-background rounded-sm w-full h-screen text-background shadow-md">
+
+    <div class="w-1/2 h-screen flex items-center justify-center p-4 text-text z-[1]">
+      <div class="flex items-center flex-col space-y-4">
+        <h1 class="text-3xl font-headings text-text">Build software better</h1>
+        <div class="flex space-x-3 text-sm md:px-40">
+          <div class="flex flex-col space-y-1">
+            <div>Build, test, and deploy directly from the browser</div>
+            <div>Build, test, and deploy directly from the browser</div>
+          </div>
+          <div class="flex flex-col space-y-1">
+            <div>Build, test, and deploy directly from the browser</div>
+            <div>Build, test, and deploy directly from the browser</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-1/2 bg-text">
+      <!-- Content for the other half of the screen goes here -->
+    </div>
+    
+  </div>
+
+  <script src="./dist/components/auth/3dcanvas.js" type="module"></script>
+
+</body>
+
+</html>
