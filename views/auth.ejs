@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
   <link rel="stylesheet" href='./dist/tw_output.css'>
+  <link rel="stylesheet" href='./dist/packages/toastr/main.css'>
 </head>
 
 <body class="bg-background font-paragraphs">
@@ -17,7 +18,6 @@
   <canvas id="render-canvas" class="w-1/2 h-screen absolute"></canvas>
 
   <div class="flex bg-background rounded-sm w-full h-screen text-background shadow-md">
-
     <div class="w-1/2 h-screen hidden md:flex items-center justify-center p-4 text-text z-[1]">
       <div class="flex items-center flex-col space-y-4">
         <h1 class="text-3xl font-headings text-text">Build software better</h1>
@@ -34,7 +34,8 @@
       </div>
     </div>
 
-    <div class="w-full md:w-1/2 flex flex-col justify-center space-y-5 px-4 md:px-0 md:py-3 bg-background text-text bg-opacity-20">
+    <div
+      class="w-full md:w-1/2 flex flex-col justify-center space-y-5 px-4 md:px-0 md:py-3 bg-background text-text bg-opacity-20">
       <div class="center flex-col text-2xl font-extrabold pb-10 flex-wrap">
         <h1 class="font-headings text-center">Create an account</h1>
         <p class="text-sm text-text text-opacity-80 text-center px-4">Welcome to Concurs severin please proceed with the
@@ -42,34 +43,60 @@
       </div>
 
       <!-- Login form -->
-      <form class="flex flex-col space-y-5 items-center px-10 sm:px-40 md:px-20 lg:px-40">
-        <div class="relative flex flex-col w-full">
-          <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">username</label>
-          <input type="text" name="" class="auth-input" />
-        </div>
-        <div class="relative flex flex-col w-full">
-          <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">email</label>
-          <input type="text" name="" class="auth-input" />
-        </div>
-        <div class="relative flex flex-co l w-full">
-          <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">password</label>
-          <input type="password" name="" class="auth-input" />
-        </div>
-        <button class="px-4 py-3 border w-full rounded-md font-bold button-anim">
-          Sign Up
-        </button>
-      </form>
+      <div id="signup-form">
+        <form class="flex flex-col space-y-5 items-center px-10 sm:px-40 md:px-20 lg:px-40">
+          <div class="relative flex flex-col w-full">
+            <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">username</label>
+            <input type="text" name="" class="auth-input" />
+          </div>
+          <div class="relative flex flex-col w-full">
+            <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">email</label>
+            <input type="text" name="" class="auth-input" />
+          </div>
+          <div class="relative flex flex-co l w-full">
+            <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">password</label>
+            <input type="password" name="" class="auth-input" />
+          </div>
+          <div class="relative flex flex-co l w-full">
+            <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">repeat password</label>
+            <input type="password" name="" class="auth-input" />
+          </div>
+          <button class="px-4 py-3 border w-full rounded-md font-bold button-anim" id="signup-button">
+            Sign Up
+          </button>
+        </form>
+      </div>
+
+      <div class="hidden" id="login-form">
+        <form class="flex flex-col space-y-5 items-center px-10 sm:px-40 md:px-20 lg:px-40">
+          <div class="relative flex flex-col w-full">
+            <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">email or username</label>
+            <input type="text" name="" class="auth-input" />
+          </div>
+          <div class="relative flex flex-co l w-full">
+            <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">password</label>
+            <input type="password" name="" class="auth-input" />
+          </div>
+          <button class="px-4 py-3 border w-full rounded-md font-bold button-anim" id="login-button">
+            Log in
+          </button>
+        </form>
+      </div>
+
 
       <!-- Info for bottom page -->
       <div class="center text-md font-extrabold space-x-1 flex-wrap">
         <p>Do you have an account?</p>
-        <a class=" text-accent" href="">Log in here</a>
+        <a class=" text-accent" href="" id="switch-form">Log in here</a>
       </div>
     </div>
   </div>
 
   <script src="./dist/components/auth/3dcanvas.js" type="module"></script>
-  <script src="./dist/components/auth/main.js" type="module"></script>
+  <script src="./dist/components/auth/formswitch.js" type="module"></script>
+  <script src="./dist/packages/jquery.js" type="module"></script>
+  <script src="./dist/packages/toastr/main.js" type="module"></script>
+  <script src="./dist/components/auth/authlogic.js" type="module"></script>
 
 
 </body>
