@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href='./dist/tw_output.css'>
+    <link rel="stylesheet" href='./dist/packages/toastr/main.css'>
+
 </head>
 
 <body class="bg-background font-paragraphs backdrop-blur-2">
@@ -13,19 +15,26 @@
 
     <div class="w-full h-1/2">
         <canvas class="w-full h-1/2" id="particles">
+            <div class="flex flex-col ">
+                
+            </div>
             Your browser does not support the canvas element.
         </canvas>
         
     </div>
 
-    <div class="w-full bg-primary h-screen">    </div>
+    <div class="w-full bg-primary h-screen">   
 
-    
-    
+    </div>
+
     <%-include ('components/footer.ejs')%>
 </body>
 
 <script src="./dist/packages/particles.min.js"></script>
+<script src="./dist/packages/jquery.js"></script>
+<script src="./dist/packages/toastr/main.js"></script>
+
 <script src="./dist/components/acasa/main.js"></script>
+
 
 </html>

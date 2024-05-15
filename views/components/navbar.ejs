@@ -1,24 +1,24 @@
 <nav class="flex items-center justify-between py-4 px-4 md:px-8 lg:px-16 text-text text-lg bg-background shadow-md sm:border-none border-b border-b-subtext border-opacity-20">
     <%-include('logo.ejs') %>
     <!-- Links -->
-    <links class="hidden md:flex items-center space-x-4">
+    <links class="hidden md:flex items-center space-x-4 font-semibold ">
         <a href="group">
-            <p class="hover-anim">Home</p>
+            <p class="hover:text-accent transition-colors duration-500">Home</p>
         </a>
         <a href="hover-anim group">
-            <p>About</p>
+            <p class="hover:text-accent transition-colors duration-500">About</p>
         </a>
         <a href="">
-            <p>Shop</p>
+            <p class="hover:text-accent transition-colors duration-500">Shop</p>
         </a>
         <a href="">
-            <p class="hover-anim">Contact</p>
+            <p class="hover:text-accent transition-colors duration-500">Contact</p>
         </a>
     </links>
     <!-- Buttons -->
     <buttons class="flex space-x-4">
-        <button class="hover:font-bold transition-all duration-300 hidden md:block px-4 py-1">Log in</button>
-        <button class="px-4 py-1 border button-anim hidden md:block">Sign Up</button>
+        <button class="hover:text-accent transition-colors duration-500 hidden md:block px-4 py-1 font-bold ">Log in</button>
+        <button class="px-4 py-1 border button-anim hidden md:block font-bold">Sign Up</button>
         <button class="block md:hidden" id="menuBtn">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" class="w-6 h-6">

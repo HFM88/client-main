@@ -1,6 +1,5 @@
 import * as THREE from '/dist/packages/threejs/src/Three.js';
 
-
 // Get a reference to your existing canvas element
 var canvas = document.getElementById('render-canvas');
 

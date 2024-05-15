@@ -6,4 +6,26 @@ document.addEventListener('DOMContentLoaded' , function(){
     }).catch(function(err){
         console.log('Failed to load particles-js cfg')
     })
+
+    toastr.options = {
+        "closeButton": true,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": false,
+        "positionClass": "toast-bottom-left",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+      }
+
+    for (let i = 0 ; i < 10 ; i++)     toastr.success('hasda');
+
 });
+
