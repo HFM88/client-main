@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href='./dist/tw_output.css'>
+</head>
+
+<body class="bg-background flex justify-center items-center h-screen">
+    <%-include ('components/navbar.ejs')%>
+    <div class="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5 text-text absolute top-1/2 search-icon transform -translate-y-1/2 left-3">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+        </svg>
+        <input type="text" placeholder="Search..." class="bg-background border border-gray-300 rounded-md py-2 px-4 outline-none focus:border-gray focus:ring focus:ring-gray transition-all duration-300 w-48 sm:w-64 search-bar pl-10">
+    </div>
+</body>
+
+<script src="./dist/packages/particles.min.js"></script>
+<script src="./dist/components/acasa/main.js"></script>
+<script src="../dist/scripts/index.js"></script>
+</html>

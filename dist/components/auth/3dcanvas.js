@@ -18,7 +18,7 @@ camera.position.z = 5;
 var spheres = [];
 var numSpheres = 55;
 var sphereRadius = 0.015;
-var sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xa0b775 });
+var sphereMaterial = new THREE.MeshBasicMaterial({ color: 0xFF3131 });
 
 for (var i = 0; i < numSpheres; i++) {
     var sphereGeometry = new THREE.SphereGeometry(sphereRadius, 32, 32);

@@ -15,20 +15,35 @@
       <%-include('./components/logo.ejs') %>
     </a>
   </div>
-  <canvas id="render-canvas" class="w-1/2 h-screen absolute"></canvas>
+  <canvas id="render-canvas" class="w-1/2 h-screen hidden md:block absolute"></canvas>
 
   <div class="flex bg-background rounded-sm w-full h-screen text-background shadow-md">
-    <div class="w-1/2 h-screen hidden md:flex items-center justify-center p-4 text-text z-[1]">
-      <div class="flex items-center flex-col space-y-4">
-        <h1 class="text-3xl font-headings text-text">Build software better</h1>
-        <div class="flex space-x-3 text-sm md:px-40">
-          <div class="flex flex-col space-y-1">
-            <div>Build, test, and deploy directly from the browser</div>
-            <div>Build, test, and deploy directly from the browser</div>
+    <div class="w-1/2 h-screen hidden md:flex items-center justify-center p-4 text-text z-[1] px-20">
+      <div class="flex items-center justify-center flex-col space-y-4">
+        <h1 class="text-3xl font-headings text-text text-center">Build software better</h1>
+        <div class="grid grid-rows-2 grid-flow-col gap-4">
+          <div class="flex space-x-3 text-text text-opacity-80">
+            <p>
+              Build, debug, and deploy seamlessly from your browser
+            </p>
           </div>
-          <div class="flex flex-col space-y-1">
-            <div>Build, test, and deploy directly from the browser</div>
-            <div>Build, test, and deploy directly from the browser</div>
+        
+          <div class="flex space-x-3 text-text text-opacity-80">
+            <p>
+              Build, debug, and deploy seamlessly from your browser
+            </p>
+          </div>
+        
+          <div class="flex space-x-3 text-text text-opacity-80">
+            <p>
+              Build, debug, and deploy seamlessly from your browser
+            </p>
+          </div>
+        
+          <div class="flex space-x-3 text-text text-opacity-80">
+            <p>
+              Build, debug, and deploy seamlessly from your browser
+            </p>
           </div>
         </div>
       </div>
@@ -47,19 +62,19 @@
         <form class="flex flex-col space-y-5 items-center px-10 sm:px-40 md:px-20 lg:px-40">
           <div class="relative flex flex-col w-full">
             <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">username</label>
-            <input type="text" name="" class="auth-input" />
+            <input type="text" name="" class="auth-input"  id="username-input-signup"/>
           </div>
           <div class="relative flex flex-col w-full">
             <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">email</label>
-            <input type="text" name="" class="auth-input" />
+            <input type="text" name="" class="auth-input"  id="email-input-signup"/>
           </div>
           <div class="relative flex flex-co l w-full">
             <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">password</label>
-            <input type="password" name="" class="auth-input" />
+            <input type="password" name="" class="auth-input"  id="password-input-signup"/>
           </div>
           <div class="relative flex flex-co l w-full">
             <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">repeat password</label>
-            <input type="password" name="" class="auth-input" />
+            <input type="password" name="" class="auth-input"  id="repassword-input-signup"/>
           </div>
           <button class="px-4 py-3 border w-full rounded-md font-bold button-anim" id="signup-button">
             Sign Up
@@ -71,11 +86,11 @@
         <form class="flex flex-col space-y-5 items-center px-10 sm:px-40 md:px-20 lg:px-40">
           <div class="relative flex flex-col w-full">
             <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">email or username</label>
-            <input type="text" name="" class="auth-input" />
+            <input type="text" name="" class="auth-input"  id="emailuser-input-login"/>
           </div>
           <div class="relative flex flex-co l w-full">
             <label class="absolute px-4 py-1 text-xs uppercase text-text text-opacity-90">password</label>
-            <input type="password" name="" class="auth-input" />
+            <input type="password" name="" class="auth-input" id="password-input-login"/>
           </div>
           <button class="px-4 py-3 border w-full rounded-md font-bold button-anim" id="login-button">
             Log in
@@ -93,10 +108,12 @@
   </div>
 
   <script src="./dist/components/auth/3dcanvas.js" type="module"></script>
-  <script src="./dist/components/auth/formswitch.js" type="module"></script>
-  <script src="./dist/packages/jquery.js" type="module"></script>
-  <script src="./dist/packages/toastr/main.js" type="module"></script>
-  <script src="./dist/components/auth/authlogic.js" type="module"></script>
+  <script src="./dist/packages/jquery.js"></script>
+  <script src="./dist/packages/toastr/main.js"></script>
+  <script src="./dist/components/auth/formswitch.js"></script>
+  <script src="./dist/components/auth/signup.js"></script>
+  <script src="./dist/components/auth/login.js"></script>
+
 
 
 </body>

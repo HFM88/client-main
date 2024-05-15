@@ -2,12 +2,14 @@
 const express = require('express')
 const fs = require('fs');
 const path = require('path');
+const cors = require('cors')
 
 const app = express()
 const port = 3000
 
 // MIDDLEWARES
 app.use('/dist' , express.static('./dist'))
+app.use(cors())
 
 // SETS
 app.set('view engine', 'ejs') 
